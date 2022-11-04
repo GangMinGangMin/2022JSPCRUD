@@ -3,8 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
 </head>
 <body>
-
+<form class="row g-3" action="form_ok.jsp" method="post">
+    <div class="col-md-6">
+        <fieldset style="width: 500px; margin:5px">
+            <legend>회원가입</legend>
+            <br>
+            <label for="uname"><span>*</span>이름: </label>
+            <input type="text" id="uname" name="uname" required=""><br><br>
+            <label for="school"><span>*</span>학교:</label>
+            <input for="text" id="school" name="school" required=""><br><br>
+            <label for="major"><span>*</span>학부:</label>
+            <input for="text" id="major" name="major" required="">
+            <select name="grade">
+                <option value="1">1학년</option>
+                <option value="2">2학년</option>
+                <option value="3">3학년</option>
+                <option value="4">4학년</option>
+            </select> <br><br>
+            <label for="email"><span>*</span>이메일:</label>
+            <input id="email" type="text" name="email"><br><br>
+            <label for="newpwd"><span>*</span>새로운 비밀번호:</label>
+            <input type="password" id="newpwd" name="newpwd" placeholder="4자 이상 입력" requird=""><br><br>
+            <label for="repwd"><span>*</span>비밀번호 재입력:</label>
+            <input type="password" id="repwd" name="repwd" placeholder="4자 이상 입력" requird=""><br><br>
+            <label for="date"><span>*</span>생년월일:</label>
+            <input type="date" id="date" name="date" value="2002-11-22" min="2000-01-01" max="2022-12-31">
+            <br><br>
+            <label for="gender1">성별:</label>
+            <input type="radio" id="gender1" name="gender" value="M" checked="">남 <input type="radio" id="radio" name="gender" value="W">여 <br><br>
+            <label for="hobby1">취미:</label>
+            <input type="checkbox" id="hobby1" name="hobby1" value="공부" checked=""> 공부
+            <input type="checkbox" id="hobby1" name="hobby2" value="게임"> 게임
+            <input type="checkbox" id="hobby1" name="hobby3" value="스포츠">스포츠
+            <input type="checkbox" id="hobby1" name="hobby4" value="여행"> 여행 <br><br>
+            <label for="mycolor"><span>*</span>좋아하는색:</label>
+            <input type="color" name="mycolor" value="#ff0000"><br><br>
+            자기소개: <br>
+            <textarea name="content" col="200" row="50"></textarea>
+            <br><br><br>
+            <input type="submit" value="submit"> <input type="reset" value="reset">
+        </fieldset>
+    </div>
+</form>
 </body>
 </html>
